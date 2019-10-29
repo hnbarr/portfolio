@@ -4,9 +4,8 @@ export default class AppPreview extends Component {
     render() {
         return (
             <div id='appPreviewLayout'>
-                <h6>standup</h6>
+                <h6 id='standupTitle'>standup</h6>
                 <ul id='gallery'>
-
                     <li id="p1" class="flipper">
                         <div class="front"><img className='fullscreenImg' src={require('./images/standup/landing.jpeg')}/></div>
                         <div class="back">
@@ -29,7 +28,7 @@ export default class AppPreview extends Component {
                         </div>
                     </li>
 
-                    <li id="p1" class="flipper">
+                    {/* <li id="p1" class="flipper">
                         <div class="front"><img className='fullscreenImg' src={require('./images/standup/landing.jpeg')}/></div>
                         <div class="back">
                             <h2>Glyph Profiles</h2>
@@ -38,22 +37,6 @@ export default class AppPreview extends Component {
                             <p>Diff P tag: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             <p class="date">Feb 18, 2013</p>
                         </div>
-                    </li>
-
-                    {/* <li className='preview'>
-                        <text>
-                            <h2>Landing Page</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </text>
-                        <img className='fullscreenImg' src={require('./images/standup/landing.jpeg')}></img>
-
-                    </li>
-                    <li className='preview'>
-                        <text>
-                            <h2>Dashboard</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </text>
-                        <img className='fullscreenImg' src={require('./images/standup/dash.jpeg')}></img>       
                     </li> */}
                 </ul>
                 
