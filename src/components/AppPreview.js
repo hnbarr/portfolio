@@ -23,12 +23,11 @@ export class Card extends Component {
         return (
             <div id='appPreviewLayout'>
                     <li id="p1" className="flipper">
-                        <div className={this.state.active ? 'display' : null} onClick={ () => this.setState({active: !this.state.active}) } >{this.props.image}</div>
-                        <div className={this.state.active ? 'text' : null} onClick={ () => this.setState({active: !this.state.active}) }>
-                            <h2>{this.props.title}</h2>
-                            {/* <p className="author">by <a href="http://google.com">Google Link?</a></p> */}
-                            <p>{this.props.description}</p>
-                            <p className="date">{this.props.date}</p>
+                        <div className={this.state.active ? 'display' : null}>{this.props.image}</div>
+                        <div className={this.state.active ? 'text' : null}>
+                            <h2 className="cardTitle">{this.props.title}</h2>
+                            <p className="cardDescription">{this.props.description}</p>
+                            <p className="cardDate">{this.props.date}</p>
                         </div>
                     </li>
             </div>

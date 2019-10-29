@@ -39,7 +39,7 @@
 }
 
 .fullscreenImg {
-  opacity: .2;
+  opacity: .15;
   width: 600px;
 }
 
@@ -55,8 +55,6 @@
 	-o-transform: scale(0.90);
 	-ms-transform: scale(0.90);
 	transform: scale(0.90);
-	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.2);
-	box-shadow: 0 3px 5px rgba(0,0,0,.2);
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -66,7 +64,7 @@
 	-moz-transform-style: preserve-3d;
 	-ms-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	position: relative;
+	/* position: relative; */
 }
 
 #gallery .flipper:hover {
@@ -75,33 +73,10 @@
 	-o-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
-	-webkit-box-shadow: 0 5px 25px rgba(0,0,0,.2);
-	box-shadow: 0 5px 25px rgba(0,0,0,.2);
-	cursor: pointer;
-}
-
-#gallery .flipper.rotate {
-	-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-	-o-transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-}
-
-#gallery:hover .clicked {
-	-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-	-o-transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);
-	transform: rotateY(180deg);
 }
 
 .display, .text {
-	width: 600px;
 	position: absolute;
-	top: 0;
-	left: 0;
-	backface-visibility: hidden;
 }
 
 .display {
