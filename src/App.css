@@ -34,18 +34,13 @@
   flex-direction: row;
   justify-content: space-evenly;
   padding: 8px;
+  margin: 0 auto;
+	perspective: 1000;
 }
 
 .fullscreenImg {
   opacity: .2;
   width: 600px;
-}
-
-#gallery {
-  margin: 0 auto;
-  /* width: 1500px; */
-	/* margin: 30px auto; */
-	perspective: 1000;
 }
 
 .fullscreenImg:hover {
@@ -55,22 +50,18 @@
 #gallery .flipper {
 	width: 600px;
   display: inline-block;
-
 	-webkit-transform: scale(0.90);
 	-moz-transform: scale(0.90);
 	-o-transform: scale(0.90);
 	-ms-transform: scale(0.90);
 	transform: scale(0.90);
-
 	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.2);
 	box-shadow: 0 3px 5px rgba(0,0,0,.2);
-
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
-
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	-ms-transform-style: preserve-3d;
@@ -84,21 +75,9 @@
 	-o-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
-
 	-webkit-box-shadow: 0 5px 25px rgba(0,0,0,.2);
 	box-shadow: 0 5px 25px rgba(0,0,0,.2);
 	cursor: pointer;
-}
-
-#gallery .flipper.blur {
-	-webkit-filter: blur(3px);
-	-webkit-transform: scale(0.88);
-	-moz-transform: scale(0.88);
-	-o-transform: scale(0.88);
-	-ms-transform: scale(0.88);
-	transform: scale(0.88);
-	filter: alpha(opacity=60);
-	opacity: 0.6;
 }
 
 #gallery .flipper.rotate {
@@ -117,7 +96,7 @@
 	transform: rotateY(180deg);
 }
 
-.front, .back {
+.display, .text {
 	width: 600px;
 	position: absolute;
 	top: 0;
@@ -125,20 +104,21 @@
 	backface-visibility: hidden;
 }
 
-.front {
-	z-index: 2;
+.display {
+	z-index: 3;
 }
 
-.back {
-	-webkit-transform: rotateY(180deg);
+.text {
+	/* -webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
 	-o-transform: rotateY(180deg);
 	-ms-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-	width: 360px;
-	height: 260px;
+  transform: rotateY(180deg); */
+  margin: 0 auto;
+	width: 558px;
+	height: 267px;
 	padding: 20px;
-	z-index: 1;
+	z-index: 2;
 	background: white;
 }
 
