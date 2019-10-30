@@ -80,21 +80,17 @@
 }
 
 .display {
-	z-index: 3;
+	z-index: 2;
 }
 
 .text {
-	/* -webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-	-o-transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);
-  transform: rotateY(180deg); */
   margin: 0 auto;
 	width: 558px;
 	height: 267px;
 	padding: 20px;
-	z-index: 2;
-	background: white;
+	z-index: 1;
+  background: transparent;
+  color: white;
 }
 
 /* #header {
